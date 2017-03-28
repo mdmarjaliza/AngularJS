@@ -1,0 +1,16 @@
+<!--
+|--------------------------------------------------------------------------|
+| Suscribimos el componente PostPreviewComponent al evento definido        |
+| en él para notificar los clics sobre los autores de los posts.           |
+|--------------------------------------------------------------------------|
+-->
+
+<!--
+|--------------------------------------------------------------------------|
+| Suscribimos el componente PostPreviewComponent al evento definido        |
+| en él para notificar los clics sobre los posts.                          |
+|--------------------------------------------------------------------------|
+-->
+
+<post-preview *ngFor="let post of posts" [post]="post" 
+              (detallado)="irDetallePost($event)"></post-preview>
